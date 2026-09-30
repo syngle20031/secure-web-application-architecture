@@ -12,10 +12,11 @@ The architecture therefore uses multiple security boundaries between external us
 
 The proposed architecture follows:
 
-External Users → External Firewall → DMZ Web Server → Internal Firewall → Internal Zone
+**External Users → External Firewall → DMZ Web Server → Internal Firewall → Internal Zone**
 
-The web server is placed in a DMZ so that the public-facing service is separated from internal systems.
+The public-facing web server is isolated in a DMZ, while an internal firewall provides an additional security boundary protecting internal resources.
 
+![Secure Web Application Architecture](secure-web-application-architecture.png)
 ## Components
 
 - External Users
